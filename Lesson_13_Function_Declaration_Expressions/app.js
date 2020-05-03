@@ -12,7 +12,7 @@ console.log(greet('Steve', 'Rogers'));
 
 const square = function(x = 3) {
   return x * x;
-}
+};
 
 console.log(square());
 
@@ -37,11 +37,11 @@ const todo = {
   edit: function (id) {
     console.log(`Edit todo ${id}`);
   }
-}
+};
 
 todo.delete = function() {
   console.log('Delete todo...');
-}
+};
 
 todo.add();
 todo.edit(22);
