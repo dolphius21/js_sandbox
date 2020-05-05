@@ -1,8 +1,9 @@
 let questions = [
-  ['How many states are in the United States?', 50],
-  ['How many continents are there?', 7],
-  ['How many legs does an insect have?', 6]
+  { question: 'How many states are in the United States?', answer: 50 },
+  { question: 'How many continents are there?', answer: 7 },
+  { question: 'How many legs does an insect have?', answer: 6 }
 ];
+
 let correctAnswers = 0;
 let question;
 let answer;
@@ -26,8 +27,8 @@ function buildList(arr) {
 }
 
 for (let i = 0; i < questions.length; i += 1) {
-  question = questions[i][0];
-  answer = questions[i][1];
+  question = questions[i].question;
+  answer = questions[i].answer;
   response = parseInt(prompt(question));
   if ( response === answer ) {
     correctAnswers += 1;
