@@ -52,3 +52,5 @@ ernie.owner = new Owner('Ashley', '123 Main Street');
 ernie.owner.phone = '(555) 555-5555';
 
 console.log(ernie.owner);
+
+
